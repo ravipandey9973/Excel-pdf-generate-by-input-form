@@ -1,0 +1,19 @@
+table
+{
+ width:800px;
+ 
+ margin:auto;
+border:solid 2px;
+border-style: outset;
+overflow-y: auto;
+height: 200px;
+
+}
+td
+{
+  padding: 5px;
+  color: brown; 
+}
+th{
+  color:blue;
+}

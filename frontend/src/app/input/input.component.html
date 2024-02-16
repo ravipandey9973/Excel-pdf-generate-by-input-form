@@ -1,0 +1,17 @@
+<form  [formGroup]="loginform" >
+    <fieldset>
+        <legend> Student Details</legend>
+    <input type="Name" name="Name"placeholder="enter name" [(ngModel)]="Name" formControlName="Name" ><br>
+    <span style="color:red" *ngIf = "Namee && Namee.invalid && Namee.touched">cant't empty</span><br>
+    <input type="major" name="major" placeholder="enter major" [(ngModel)]="Major" formControlName="Major"> <br>
+    <span style="color:red" *ngIf = "Majorr && Majorr.invalid && Majorr.touched ">cant't empty</span><br>
+    <input type="date" name="date" [(ngModel)]="DateOfJoining" formControlName="DateOfJoining"><br>
+    <span style="color:red" *ngIf = "DateOfJoiningg && DateOfJoiningg.invalid && DateOfJoiningg.touched ">cant't empty</span><br><br>
+    <button type="button" (click)="adddata()" [disabled]="loginform.invalid">Submit</button>
+    <button (click)="downloadPDF()">Download PDF</button>
+    <button (click)="downloadExcel()">Download Excel</button>
+
+</fieldset>
+</form>
+
+
